@@ -37,3 +37,13 @@ font-family: Zen Antique Soft,serif;
     font-size: 2rem;
     color: #D8D0BC;
 }
+h3 a{
+    font-size: 1.5rem;
+    color: #D8D0BC;
+    display: inline-block; 
+    background-color: #8D2335;
+    border-radius: 1rem; 
+    padding: 0.3rem 0.8rem;
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+}
