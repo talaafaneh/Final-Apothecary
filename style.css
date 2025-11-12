@@ -1,6 +1,8 @@
 body{
     font-family: Zen Antique Soft,serif;
-    text-align: center;}
+    text-align: center;
+    background-color: #230f02;
+}
 h1{
     margin-left: 1.5rem;
 }
