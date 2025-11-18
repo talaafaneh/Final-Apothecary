@@ -5,12 +5,13 @@ body{
     color: #D8D0BC;
 }
 
-.about{background-color: #D8D0BC;}
+.Lightbg{background-color: #D8D0BC;}
+
 
 h1{
     margin-left: 1.5rem;
 }
-.aboutH{
+.HeadTitle{
         font-size: 3.5rem;
         font-family: Zen Antique Soft,serif;
         text-align: center;
