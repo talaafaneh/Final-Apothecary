@@ -46,9 +46,10 @@ nav a:hover{
 }
 
 #title{
-font-family: Zen Antique Soft,serif;
+ font-family: Zen Antique Soft,serif;
  color: #E7A748;
  font-size: 4rem;
+ margin-top: -15rem;
  
 }
 
@@ -58,7 +59,7 @@ font-family: Zen Antique Soft,serif;
     margin-left: 1.5rem;
 }
 #paragraph1{
-    margin-top: -3rem;
+    margin-top: -1.5rem;
     font-size: 2rem;
     color: #D8D0BC;
 }
@@ -72,6 +73,7 @@ h3 a{
     text-decoration: none;
     font-family: Nunito, sans-serif;
     transition: background 0.5s; 
+    margin-top: 3rem;
 }
 h3 a:hover{
     background-color: #230f02;
