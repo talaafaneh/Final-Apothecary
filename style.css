@@ -49,6 +49,7 @@ nav a:hover{
  font-family: Zen Antique Soft,serif;
  color: #E7A748;
  font-size: 4rem;
+ margin-left: 2rem;
 }
 
 .MainText{
@@ -60,6 +61,7 @@ nav a:hover{
     margin-top: -1.5rem;
     font-size: 2rem;
     color: #D8D0BC;
+    margin-left: 2rem;
 }
 h3 a{
     font-size: 1.5rem;
@@ -71,6 +73,7 @@ h3 a{
     text-decoration: none;
     font-family: Nunito, sans-serif;
     transition: background 0.5s; 
+    margin-left: 2rem;
 }
 h3 a:hover{
     background-color: #230f02;
