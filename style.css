@@ -49,8 +49,7 @@ nav a:hover{
  font-family: Zen Antique Soft,serif;
  color: #E7A748;
  font-size: 4rem;
- margin-top: -15rem;
- 
+ margin-right: none;
 }
 
 .MainText{
@@ -73,7 +72,6 @@ h3 a{
     text-decoration: none;
     font-family: Nunito, sans-serif;
     transition: background 0.5s; 
-    margin-top: 3rem;
 }
 h3 a:hover{
     background-color: #230f02;
@@ -98,7 +96,7 @@ main{
 
 /* Hero image container */
 #hero-image {
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,9 +104,6 @@ main{
 
 /* The actual image */
 #hero-image img {
-    width: 100%;
+    width: 50%;
     height: auto;
-    max-height: 100vh; /* THIS is the key */
-    object-fit: contain; /* Prevents cropping */
-    display: block;
 }
