@@ -86,20 +86,27 @@ main{
     margin-top: -2rem;
     color: #230f02;
 }
-.MainText{
+.MainText {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 500px;
-    overflow: hidden;
     padding: 40px 0;
 }
-.this{
-    max-width: 50%;
+
+
+/* Hero image container */
+#hero-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#hero-image{
-    height: 100%;
-    width: auto;
-    max-width: 50%;
-    object-fit: cover;
+
+/* The actual image */
+#hero-image img {
+    width: 100%;
+    height: auto;
+    max-height: 100vh; /* THIS is the key */
+    object-fit: contain; /* Prevents cropping */
+    display: block;
 }
