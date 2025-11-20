@@ -182,4 +182,16 @@ main{
     margin-bottom: 1rem;
     color: #230f02;
 }
+/* About Page images */
+.aboutimg {
+  display: flex;
+  gap: 10px;          
+  justify-content: center; 
+  margin: 20px 0;
+}
 
+.aboutimg img {
+  width: 300px;       
+  height: auto;
+  border-radius: 10px; 
+}
