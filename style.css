@@ -144,3 +144,26 @@ main{
     object-fit: cover;
 }
 
+.btn {
+    font-size: 1rem;
+    color: #D8D0BC;
+    /* display: inline-block;  */
+    background-color: #8D2335;
+    border-radius: 0.5rem; 
+    padding: 0.2rem 0.6rem;
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    transition: background 0.5s; 
+}
+.btn:hover{
+    background-color: #230f02;
+}
+.card-content{
+    padding: 1rem;
+}
+.card-title{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    color: #230f02;
+}
+
