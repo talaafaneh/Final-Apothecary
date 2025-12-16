@@ -1,4 +1,6 @@
 body{
+    display: flex;
+    flex-direction: column;
     font-family: Zen Antique Soft,serif;
     text-align: center;
     background-color: #230f02;
@@ -197,15 +199,10 @@ main{
 }
 
 footer {
-    max-height: 150px;
-    font-family: Zen Antique Soft,serif;
-    text-align: center;
-    background-color: #0c0501;
-    color: #D8D0BC;
-    margin:none;
-    /* Sticky Footer */
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+font-family: "Zen Antique Soft", serif;
+  text-align: center;
+  background-color: #0c0501;
+  color: #D8D0BC;
+  margin: 0;
+  width: 100%;
 }
