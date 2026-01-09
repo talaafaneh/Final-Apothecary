@@ -10,40 +10,35 @@ body{
     margin: 0;
 }
 #promotion{
-    /* This keeps the image inside the container box */
-    position: relative;  
+    position: relative;
     background: linear-gradient(179deg, #A54A14 6.86%, #3F1C08 98.79%);
     display: flex;
-    flex-direction: column; 
-    align-items: center;   
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-
     min-height: 100vh;
+    /* Adjusted padding-top to leave have space but aren't too far away */
+    padding-top: 15rem; 
+    overflow: hidden;  
     font-family: Zen Antique Soft, serif;
     color: #E7A748;
-    
-    /* promotional text */
-    /* text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; */
-    
     padding-top: 40rem; 
+}
 
-    /* background: linear-gradient(179deg, #A54A14 6.86%, #3F1C08 98.79%);
-    width: 100%;
-    height: 100%;
-    font-family: Zen Antique Soft,serif;
-    color: #E7A748;
-    font-size: 4rem;
-    padding-top: 40rem; */
-}
 .carousel {
-    display: flex;
-    gap: 30px;         
-      /* Space between the cards */
+/* position relative to place the carousel element in its own, new "positioning context". 
+Any children inside the carousel with position:absolute will be positioned relative to it.*/
+    position: relative;
     width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    overflow: hidden;  /* This makes sure that we only see 100% of our 300% container */}
+    
+    .carousel input[type="radio"]{ /*The part in square brackets [] ensures that only inputs of the type "radio" get this styling */
+    display: none;
 }
+
+
 .card img {
       width: 100%;
       height: auto;
@@ -70,6 +65,19 @@ body{
     font-size: 4rem;
     margin: 0;
     z-index: 2; /* Ensures text stays on top */
+    margin-bottom: 3rem;
+   
+}
+/* 1. The Container that hides the "off-screen" images */
+.carousel-window {
+    width: 100%;
+    overflow: hidden;
+}
+/* 2. The Track that moves. Total width = (width of 1 card * 12 cards) */
+.carousel-track {
+    display: flex;
+    width: calc(350px * 12); 
+    animation: autoSlide 25s linear infinite;
 }
 
 .Lightbg{background-color: #D8D0BC;}
@@ -242,6 +250,7 @@ main{
     
 }
 .card{
+    
     max-width: 300px;
     background-color: aliceblue;
     border-radius: 16px;
@@ -254,6 +263,16 @@ main{
     height: 400px;
     object-fit: cover;
 }
+/* 4. The Animation Logic */
+   @keyframes autoSlide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Move exactly half of the duplicated track */
+        transform: translateX(-50%);
+    }
+} 
 
 .btn {
     font-size: 1rem;
