@@ -4,9 +4,57 @@ body{
     font-family: Zen Antique Soft,serif;
     text-align: center;
     background-color: #230f02;
+    background: linear-gradient(179deg, #A54A14 6.86%, #3F1C08 98.79%);
     color: #D8D0BC;
     padding: 0;
     margin: 0;
+}
+#promotion{
+    /* This keeps the image inside the container box */
+    position: relative;  
+    background: linear-gradient(179deg, #A54A14 6.86%, #3F1C08 98.79%);
+    width: 100%;
+    min-height: 100vh;
+    font-family: Zen Antique Soft, serif;
+    color: #E7A748;
+    
+    /* promotional text */
+    /* text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+    
+    padding-top: 40rem; 
+
+    /* background: linear-gradient(179deg, #A54A14 6.86%, #3F1C08 98.79%);
+    width: 100%;
+    height: 100%;
+    font-family: Zen Antique Soft,serif;
+    color: #E7A748;
+    font-size: 4rem;
+    padding-top: 40rem; */
+}
+.floating-visual {
+    /*  Removes the image from the normal flow */
+    position: absolute;
+    
+    top: 5rem; 
+    left: 50%;
+    transform: translateX(-50%); 
+    /* Centers the image perfectly */
+    /* object-fit: cover; */
+    
+    /* 6. Adjust size as needed */
+    width: 80%; 
+    max-width: 1200px;
+    opacity: 0.8; /* Optional: makes it blend like your screenshot */
+    pointer-events: none; /* Allows you to click "through" the image to text */
+}
+
+#promotion h4 {
+    font-size: 4rem;
+    margin: 0;
+    z-index: 2; /* Ensures text stays on top */
 }
 
 .Lightbg{background-color: #D8D0BC;}
@@ -58,11 +106,6 @@ nav a:hover{
  margin-left: 2rem;
 }
 
-.MainText{
-    text-align: left;
-    font-family: Nunito;
-    /* margin-left: 1.5rem; */
-}
 #paragraph1{
     margin-top: -1.5rem;
     font-size: 2rem;
@@ -99,9 +142,7 @@ text-decoration: none;
 .contact a:hover{
     color: #E7A748;
 }
-#promotion{
-    margin-top: 15rem;
-}
+
 main{
     text-align: center;
     font-size: 1.5rem;
@@ -111,6 +152,9 @@ main{
 }
 /* Parent container that contains video plus text */
 .MainText {
+    text-align: left;
+    font-family: Nunito;
+    /* margin-left: 1.5rem; */
     /* added this to be able to adjust the video incase positioning is wrong */
     position: relative;
     width: 100%;
