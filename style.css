@@ -3,8 +3,8 @@ body{
     flex-direction: column;
     font-family: Zen Antique Soft,serif;
     text-align: center;
-    background-color: #230f02;
-    background: linear-gradient(179deg, #A54A14 6.86%, #3F1C08 98.79%);
+   background-color: #3F1C08; 
+    margin-top: 0;
     color: #D8D0BC;
     padding: 0;
     margin: 0;
@@ -55,11 +55,12 @@ Any children inside the carousel with position:absolute will be positioned relat
     /* object-fit: cover; */
     
     /* 6. Adjust size as needed */
-    width: 80%; 
-    max-width: 1200px;
-    opacity: 0.8; /* Optional: makes it blend like your screenshot */
-    pointer-events: none; /* Allows you to click "through" the image to text */
+    width: 100%; 
+    max-width: 1400px;
+    /* looks the best overview wise */
+    opacity: 0.8;   
 }
+
 
 #promotion h4 {
     font-size: 4rem;
@@ -72,23 +73,25 @@ Any children inside the carousel with position:absolute will be positioned relat
     font-family: Zen Antique Soft,serif;
  color: #E7A748;
  font-size: 4rem;
- margin-left: 10rem;
-    font-size: 4rem;
     z-index: 2; /* Ensures text stays on top */
  font-family: Zen Antique Soft,serif;
 }
 
 .promotion2 {
+    overflow-x: hidden; /* This prevents horizontal scrolling */
     display: flex;
     justify-content: space-evenly;
+    padding-left: 8%;
+    
 }
 
 .indulge img {
+    margin-left: 8rem;
     width: 100%;
     max-width: fit-content; 
     height: auto;
     
-    /* This creates the specific curve from your image */
+    /* This creates the curve on one corner */
     border-top-left-radius: 50% 100%; 
     
     /* Ensures the image fills the area properly */
@@ -98,7 +101,6 @@ Any children inside the carousel with position:absolute will be positioned relat
 h5 a{
     font-size: 1.5rem;
     color: #D8D0BC;
-    display: flex; 
     background-color: #8D2335;
     border-radius: 1rem; 
     padding: 0.3rem 0.8rem;
@@ -111,9 +113,28 @@ h5 a:hover{
     background-color: #D8D0BC;
 }
 .promotionwords{
-    flex: 1;
     text-align: left;
+}
+.lastelement {
+    background: linear-gradient(to bottom, #3F1C08, #A54A14); 
+    width: 100%;
+    min-height: 600px;       
+    overflow: hidden;         /* Prevents horizontal scrollbars, and the overflowing of images*/
+    display: flex;
+    align-items: center;      
+}
 
+.graphic-container {
+    display: flex;
+    justify-content: space-between; /* Pushes element1 to left, element2 to right */
+    width: 100%;
+    padding: 2%; /* Adds a space from the screen edge */
+}
+
+.graphic-container img {
+    height: auto;
+    max-width: 300px; /* looks the most like my figma design */
+    opacity: 0.7;   
 }
 /* 1. The Container that hides the "off-screen" images */
 .carousel-window {
