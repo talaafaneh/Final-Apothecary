@@ -38,11 +38,18 @@ Any children inside the carousel with position:absolute will be positioned relat
     display: none;
 }
 
-
+.imgbox{
+    overflow: hidden
+}
 .card img {
       width: 100%;
       height: auto;
       display: block;
+      transition: scale 0.3s ease-in-out;
+      
+}
+.card img:hover{
+    scale: 1.1;
 }
 .floating-visual {
     /*  Removes the image from the normal flow */
@@ -313,7 +320,7 @@ main{
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 5rem;
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding: 2rem;
     padding-bottom: 4rem;
     margin: 1rem;
