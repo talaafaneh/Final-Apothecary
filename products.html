@@ -1,129 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
-</head>
-<body class="Lightbg">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Zen+Antique+Soft&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="Lightbg">
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="about.html">About</a>
-            <a href="#contact">Contact</a>
-            <i class="fa-solid fa-magnifying-glass"></i>   <!-- Search -->
-            <i class="fa-solid fa-cart-shopping"></i>      <!-- Cart -->
-
-        </nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <!-- Search -->
+        <i class="fa-solid fa-cart-shopping"></i>
+        <!-- Cart -->
+      </nav>
     </header>
-   <main>
-        <h1 class="HeadTitle">Our Curated Blends</h1>
-        <p>Explore our selection of traditional remedies & natural wellness</p>
-   </main>
-   <!-- Cards showcasing products -->
-   <div class="grid">
+    <main>
+      <h1 class="HeadTitle">Our Curated Blends</h1>
+      <p>Explore our selection of traditional remedies & natural wellness</p>
+    </main>
+    <!-- ............................................................................................................................ -->
+    <!-- Cards showcasing products -->
+    <div class="grid">
+      <div class="card">
+        <div class="imgbox">
+          <img src="images/hair.png" alt="Hair Oil" />
+        </div>
+        <div class="card-content">
+          <div class="card-title">Hair Oil</div>
+           <!-- new addition, used flowbite for reference -->
+          <a href="#modal-hair" class="btn">View</a>
+        </div>
+      </div>
+      <div id="modal-hair" class="modal-overlay">
+        <div class="modal-content">
+          <a href="#" class="close-btn">&times;</a>
+          <div class="modal-body">
+            <div class="modal-img">
+              <img src="images/hair.png" alt="Hair Oil" />
+            </div>
+            <div class="modal-text">
+              <h2>Hair Oil</h2>
+              <p class="price">20.00 JOD</p>
+              <p class="description">
+                <strong>120 ml - Store at Room Temperature</strong><br> 
+                Strengthens roots and adds shine using ancient herbal blends. <br>
+                Ingredients:<br>
+                Castor oil, Sweet almond oil, Argan oil, Vitamin E oil
+              </p>
+              <div class="modal-actions">
+                <button class="refill">Refill</button>
+                <a href="#" class="buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="card">
-      <div class="imgbox">
-      <img src="images/hair.png" alt="Hair Oil bottle picture">
+      <div class="card">
+        <div class="imgbox">
+          <img src="images/brow.png" alt="Brow Infusion" />
+        </div>
+        <div class="card-content">
+          <div class="card-title">Brow Infusion</div>
+          <!-- new -->
+          <a href="#modal-brow" class="btn">View</a>
+        </div>
       </div>
-      <div class="card-content">
-        <div class="card-title">Hair Oil</div>
-        <a href="view.html" class="btn">View</a>
+      <div id="modal-brow" class="modal-overlay">
+        <div class="modal-content">
+          <a href="#" class="close-btn">&times;</a>
+          <div class="modal-body">
+            <div class="modal-img">
+              <img src="images/brow.png" alt="Brow Infusion" />
+            </div>
+            <div class="modal-text">
+              <h2>Brow Infusion</h2>
+              <p class="price">15.00 JOD</p>
+              <p class="description">
+                <strong>160 ml - Store at Room Temperature</strong><br> 
+                A nutrient-rich blend designed to thicken and nourish eyebrows. <br>
+                Ingredients:<br>
+                Jojoba oil, Olive oil, Coconut oil, Vitamin B oil
+                
+              </p>
+              <div class="modal-actions">
+                <button class="refill">Refill</button>
+                <a href="#" class="buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgbox">
+          <img src="images/essential.png" alt="Essential Serum" />
+        </div>
+        <div class="card-content">
+          <div class="card-title">Essential Serum</div>
+          <!-- new -->
+          <a href="#modal-serum" class="btn">View</a>
+        </div>
+      </div>
+      <div id="modal-serum" class="modal-overlay">
+        <div class="modal-content">
+          <a href="#" class="close-btn">&times;</a>
+          <div class="modal-body">
+            <div class="modal-img">
+              <img src="images/essential.png" alt="Essential Serum" />
+            </div>
+            <div class="modal-text">
+              <h2>Essential Serum</h2>
+              <p class="price">20.00 JOD</p>
+              <p class="description">
+                 <strong>200 ml - Store at Room Temperature</strong><br> 
+                Deep hydration for glowing skin, crafted from rare botanicals. <br>
+                Ingredients:<br>
+                Black seeds, Hibiscus flowers, Neem leaves.
+              </p>
+              <div class="modal-actions">
+                <button class="refill">Refill</button>
+                <a href="#" class="buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgbox">
+          <img src="images/herbal.png" alt="Herbal Breath" />
+        </div>
+        <div class="card-content">
+          <div class="card-title">Herbal Breath Elixir</div>
+          <!-- new -->
+          <a href="#modal-herbal" class="btn">View</a>
+        </div>
+      </div>
+      <div id="modal-herbal" class="modal-overlay">
+        <div class="modal-content">
+          <a href="#" class="close-btn">&times;</a>
+          <div class="modal-body">
+            <div class="modal-img">
+              <img src="images/herbal.png" alt="Herbal Breath" />
+            </div>
+            <div class="modal-text">
+              <h2>Herbal Breath Elixir</h2>
+              <p class="price">10.00 JOD</p>
+              <p class="description">
+                   <strong>260 ml - Store in Fridge</strong><br> 
+                Natural freshness with a blend of peppermint and clove.<br>
+                Ingredients:<br>
+                Peppermint Tea, Clove flower, Cinnamon stick.
+              </p>
+              <div class="modal-actions">
+                <button class="refill">Refill</button>
+                <a href="#" class="buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgbox">
+          <img src="images/stomach.png" alt="Stomach Ease" />
+        </div>
+        <div class="card-content">
+          <div class="card-title">Stomach Ease Blend</div>
+          <!-- new -->
+          <a href="#modal-stomach" class="btn">View</a>
+        </div>
+      </div>
+      <div id="modal-stomach" class="modal-overlay">
+        <div class="modal-content">
+          <a href="#" class="close-btn">&times;</a>
+          <div class="modal-body">
+            <div class="modal-img">
+              <img src="images/stomach.png" alt="Stomach Ease" />
+            </div>
+            <div class="modal-text">
+              <h2>Stomach Ease Blend</h2>
+              <p class="price">26.00 JOD</p>
+              <p class="description">
+                <strong>200 ml - Store in Fridge</strong><br>
+                Soothing herbal tea blend to aid digestion and comfort.<br>
+                Ingredients:<br>
+                Chamomile Tea, Lemongrass, Ginger.  
+              </p>
+              <div class="modal-actions">
+                <button class="refill">Refill</button>
+                <a href="#" class="buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgbox">
+          <img src="images/calming.png" alt="Calming Essence" />
+        </div>
+        <div class="card-content">
+          <div class="card-title">Calming Essence</div>
+           <!-- new -->
+          <a href="#modal-calming" class="btn">View</a>
+        </div>
+      </div>
+      <div id="modal-calming" class="modal-overlay">
+        <div class="modal-content">
+          <a href="#" class="close-btn">&times;</a>
+          <div class="modal-body">
+            <div class="modal-img">
+              <img src="images/calming.png" alt="Calming Essence" />
+            </div>
+            <div class="modal-text">
+              <h2>Calming Essence</h2>
+              <p class="price">13.00 JOD</p>
+              <p class="description">
+                <strong>200 ml - Store at Room Temperature</strong><br>
+                Lavender infusion to help you relax and unwind.<br>
+                Ingredients:<br>
+                Lavender, Rose Extract, Orange Extract. 
+              </p>
+              <div class="modal-actions">
+                <button class="refill">Refill</button>
+                <a href="#" class="buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="card">
-      <div class="imgbox">
-      <img src="images/brow.png" alt="Brow Infusion bottle picture">
-      </div>
-      <div class="card-content">
-        <div class="card-title">Brow Infusion</div>
-        <a href="view.html" class="btn">View</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="imgbox">
-      <img src="images/essential.png" alt="Essential Serum bottle picture">
-      </div>
-      <div class="card-content">
-        <div class="card-title">Essential Serum</div>
-        <a href="view.html" class="btn">View</a>
-    </div>
-    </div>
-
-    <div class="card">
-      <div class="imgbox">
-      <img src="images/herbal.png" alt="Herbal Breath Elixir picture">
-      </div>
-      <div class="card-content">
-        <div class="card-title">Herbal Breath Elixir</div>
-        <a href="view.html" class="btn">View</a>
-    </div>
-    </div>
-
-    <div class="card">
-      <div class="imgbox">
-      <img src="images/stomach.png" alt="Stomach Ease Blend picture">
-      </div>
-      <div class="card-content">
-        <div class="card-title">Stomach Ease Blend</div>
-        <a href="view.html" class="btn">View</a>
-    </div>
-    </div>
-
-    <div class="card">
-       <div class="imgbox">
-      <img src="images/calming.png" alt="Calming Essence picture">
-      </div>
-      <div class="card-content">
-        <div class="card-title">Calming Essence</div>
-        <a href="view.html" class="btn">View</a>
-    </div>
-    </div>
-
-  </div>
-<!-- ...................... -->
-     <!-- FOOTER SECTION MODIFIED-->
-     <!-- ...................... -->
-      <footer>
-        <section id="contact">
-    <div class="footer-container">
-        <div class="footer-column align-left">
+    <!-- ...................... -->
+    <!-- FOOTER SECTION MODIFIED-->
+    <!-- ...................... -->
+    <footer>
+      <section id="contact">
+        <div class="footer-container">
+          <div class="footer-column align-left">
             <h4>Contact Us</h4>
             <p>Phone: <a href="tel:+123456789">+123456789</a></p>
-            <p>Email: <a href="mailto:Attarhouse@gmail.com">Attarhouse@gmail.com</a></p>
-        </div>
+            <p>
+              Email:
+              <a href="mailto:Attarhouse@gmail.com">Attarhouse@gmail.com</a>
+            </p>
+          </div>
 
-        <div class="footer-column">
+          <div class="footer-column">
             <h4>Follow Us</h4>
             <div class="social-icons">
-                <a href="https://www.youtube.com"><img src="images/Youtube.svg" alt="YouTube"></a>
-                <a href="https://www.facebook.com"><img src="images/Facebook.svg" alt="Facebook"></a>
-                <a href="https://www.instagram.com"><img src="images/Instagram.svg" alt="Instagram"></a>
+              <a href="https://www.youtube.com"
+                ><img src="images/Youtube.svg" alt="YouTube"
+              /></a>
+              <a href="https://www.facebook.com"
+                ><img src="images/Facebook.svg" alt="Facebook"
+              /></a>
+              <a href="https://www.instagram.com"
+                ><img src="images/Instagram.svg" alt="Instagram"
+              /></a>
             </div>
-        </div>
+          </div>
 
-        <div class="footer-column align-right">
+          <div class="footer-column align-right">
             <h4>Get Help</h4>
             <p><a href="FAQ.html">FAQ</a></p>
             <p><a href="OurJourney.html">Our Journey</a></p>
+          </div>
         </div>
-    </div>
 
-    <div class="footer-bottom">
-        <p>&copy;2026 Attar House, All Rights Reserved.</p>
-    </div>
-    </section>
-</footer>
-
-    
-</body>
+        <div class="footer-bottom">
+          <p>&copy;2026 Attar House, All Rights Reserved.</p>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>

@@ -195,6 +195,9 @@ nav a{
 nav a:hover{
     color: #D8D0BC;
 }
+.fa-solid{
+    color: #E7A748;
+}
 
 
 #title{
@@ -307,7 +310,7 @@ main{
     mask-repeat: no-repeat;
 } */
 
-/* 4. Ensure your text is on top of the video */
+/* 4. Ensure  text is on top of the video */
 .this {
     padding-left: 8%;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
@@ -344,7 +347,7 @@ main{
     height: 400px;
     object-fit: cover;
 }
-/* 4. The Animation Logic */
+/* 4. The Animation */
    @keyframes autoSlide {
     0% {
         transform: translateX(0);
@@ -567,4 +570,90 @@ footer {
 .faq-item input:checked ~ div[class^="faq-overlay"] {
   display: block;
 }
+/* .............. */
+/* MODAL / POP UP */
+/* .............. */
 
+/* --- MODAL POPUP STYLES --- */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(63, 28, 8, 0.9);
+    /* added  incase */
+    z-index: 999;
+    opacity: 0;
+    /* added incase */
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay:target {
+    opacity: 1;
+    /* added incase */
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: #D8D0BC;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    border: 2px solid #E7A748;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px; right: 20px;
+    font-size: 2rem;
+    color: #3F1C08;
+    text-decoration: none;
+}
+
+.modal-body {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.modal-img img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    border-radius: 10px;
+}
+
+.modal-text {
+    /* added incase */
+    flex: 1;
+    text-align: left;
+    color: #3F1C08;
+    font-family: 'Zen Antique Soft', serif;
+}
+
+.modal-text h2 { margin-top: 0; color: #8D2335; }
+.price { font-size: 1.5rem; color: #E7A748; font-weight: bold; }
+.description { font-family: 'Nunito', sans-serif; }
+
+.modal-actions { margin-top: 1.5rem; display: flex; gap: 1rem; }
+
+.refill, .buy-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.refill { background: transparent; border: 2px solid #3F1C08; color: #3F1C08; }
+.refill:hover { background: #3F1C08; color: #D8D0BC; }
+.buy-btn { background: #8D2335; color: #D8D0BC; }
+.buy-btn:hover { background: #3F1C08; }
