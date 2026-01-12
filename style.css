@@ -195,10 +195,54 @@ nav a{
 nav a:hover{
     color: #D8D0BC;
 }
+/* ........................... */
+/* Search Icon */
+/* ........................... */
+/* Checkbox hack used */
 .fa-solid{
     color: #E7A748;
 }
+/* Container holding search bar and icon*/
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;        
+    
+}
 
+/* Hiding the checkbox  */
+.search-checkbox {
+    display: none;
+}
+
+/* the search bar, hidden before its clicked */
+.search-box {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.4s ease-in-out;
+     /* Smooth slide effect */
+}
+
+/* Styling bar itself */
+.search-box input {
+    width: 10rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4rem;
+}
+
+/* makes icon look clickable */
+.search-icon {
+    cursor: pointer;
+    display: flex; 
+}
+
+/* --- this is the "INTERACTION" we link it so when clicked, search bar appears  --- */
+/* When clicked, expand the input box */
+.search-checkbox:checked ~ .search-box {
+    width: 15rem;
+}
+/* ................................ */
+/* ............................... */
 
 #title{
  font-family: Zen Antique Soft,serif;
@@ -657,3 +701,11 @@ footer {
 .refill:hover { background: #3F1C08; color: #D8D0BC; }
 .buy-btn { background: #8D2335; color: #D8D0BC; }
 .buy-btn:hover { background: #3F1C08; }
+
+/* .................... */
+/* Media QUERIES */
+/* ................... */
+/* =======================================================
+   MASTER MOBILE MEDIA QUERY (iPhone & Small Screens)
+   ======================================================= */
+@media (max-width: 767px){}
