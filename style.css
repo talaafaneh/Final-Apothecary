@@ -417,6 +417,22 @@ main{
 .btn:hover{
     background-color: #230f02;
 }
+#QQ{
+    font-size: 1rem;
+    color: #D8D0BC;
+    background-color: #8D2335;
+    border-radius: 0.5rem; 
+    padding: 0.2rem 0.6rem;
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    transition: background 0.5s; 
+}
+button{
+    background-color: #3F1C08;
+}
+#QQ:hover{
+    background-color: #E7A748;
+}
 .card-content{
     padding: 1rem;
 }
